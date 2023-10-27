@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zadanie27._10Badowski4c.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0">
+
+            <Switch IsToggled="False" 
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    x:Name="akcja"/>
+
+            <RadioButton Content="Kot"
+                         x:Name="kot"
+                         CheckedChanged="test1"
+                         GroupName="zwierze"/>
+            <RadioButton Content="Pies"
+                         x:Name="pies"
+                         CheckedChanged="test1"
+                         GroupName="zwierze"/>
+            <RadioButton Content="Krowa"
+                         x:Name="krowa"
+                         CheckedChanged="test1"
+                         GroupName="zwierze"/>
+
+            <Button 
+                Text="Wykonaj"
+                Clicked="akcjaTablica" />
+
+            <Label 
+                Text ="Kot: 0, Pies: 0, Krowa: 0" 
+                x:Name="wynik"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
